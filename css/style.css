@@ -1,0 +1,31 @@
+*{
+  font-family: cursive;
+  font-style  : italic; 
+}
+
+i{
+  font-size: 30px;
+  padding: 0 10px;
+}
+
+/* テキストのグラデーションは以下を参考 */
+/* https://saruwakakun.com/html-css/basic/linear-radial-gradient
+https://marie-web.design/blog/text-gradation/ */
+.fa-instagram{
+  color: #fcc37d;
+  background: linear-gradient(to bottom, #5c1ac7 15%, #e12814 40%, #fcc37d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-facebook{
+  color: rgb(34, 34, 186);
+}
+
+.fa-twitter{
+  color: rgb(58, 228, 228);
+}
+
+.fa-line{
+  color: rgb(22, 242, 22);
+}

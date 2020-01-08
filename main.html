@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="HTMLの雛形です。今回はサロン用の雛形を作りました。">
+    <meta name="keywords" content="html,雛形,サロン">
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+      crossorigin="anonymous"></script>
+    <title>タイトル</title>
+  </head>
+  <body>
+
+    <header class="px-5 py-3 border-bottom">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h1>Salon De Shun</h1>
+        </div>
+        <div>
+          <p class="m-0">TEL：080-xxxx-xxxx</p>
+          <p>受付：12:00~24:00</p>
+        </div>
+      </div>
+
+    </header>
+    
+    <main class="py-5">
+      <!-- スライド -->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade col-lg-9 m-auto" data-ride="carousel"　data-wrap="true" style="height: 500px;">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="10000">
+            <img class="d-block w-100" src="image/S__108978195.jpg" alt="第1スライド" style="height: 500px;">
+          </div>
+          <div class="carousel-item" data-interval="10000">
+            <img class="d-block w-100" src="image/S__108978197.jpg" alt="第2スライド" style="height: 500px;">
+          </div>
+          <div class="carousel-item" data-interval="10000">
+            <img class="d-block w-100" src="image/S__108978198.jpg" alt="第3スライド" style="height: 500px;">
+          </div>
+          <div class="carousel-item" data-interval="10000">
+            <img class="d-block w-100" src="image/S__108978200.jpg" alt="第4スライド" style="height: 500px;">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">前へ</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">次へ</span>
+        </a>
+      </div>
+      <!-- メイン -->
+      <div class="col-lg-9 m-auto py-5">
+        <!-- コンテンツ１-->
+        <h2 class="text-center pb-5">／ About Us ／</h2>
+        <div class="d-lg-flex">
+          <div class="p-2" style="background-color: rgba(245, 245, 220, 0.3);">
+            <p>女性専用のサロンになります。 </p>
+            <p>私たちは女性がより社会で輝けるようなサポートが出来るように願いを込め、サロンをオープンいたしました。</p>
+            <p>第二のホームとなるように、入りやすい環境を作って参りますので是非お気軽にお声がけください。</p>
+          </div>
+          <div>
+            <img class="d-block w-100" src="image/S__108978195.jpg" alt="第1スライド" style="height: 500px;">
+          </div>
+        </div>
+        <!-- コンテンツ２ -->
+        <h2 class="text-center py-5">／ Therapist ／</h2>
+        <div class="d-lg-flex">
+          <div>
+            <img class="d-block w-100" src="image/S__108978195.jpg" alt="第1スライド" style="height: 500px;">
+          </div>
+          <div class="p-2" style="background-color: rgba(245, 245, 220, 0.3);">
+            <p>女性専用のサロンになります。 </p>
+            <p>私たちは女性がより社会で輝けるようなサポートが出来るように願いを込め、サロンをオープンいたしました。</p>
+            <p>第二のホームとなるように、入りやすい環境を作って参りますので是非お気軽にお声がけください。</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-3 text-center border-top">
+      <h5>／ Follow Us ／</h5>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-line"></i>
+      <p class="m-0">
+        上記SNSでも、ご相談、ご予約承っております。<br>
+        お気軽にご連絡下さいませ。
+      </p>
+      
+    </footer>
+
+    <script>
+    $(function(){
+    });
+    </script>
+
+  </body>
+</html>
