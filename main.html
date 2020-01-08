@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta name="description" content="HTMLの雛形です。今回はサロン用の雛形を作りました。">
     <meta name="keywords" content="html,雛形,サロン">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet"  href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
       crossorigin="anonymous">
@@ -24,20 +27,22 @@
 
     <header class="px-5 py-3 border-bottom">
       <div class="d-flex justify-content-between">
-        <div>
-          <h1>Salon De Shun</h1>
+        <div class="headerTitle">
+          <h1 class="border-bottom m-0 px-5" style="font-size: 50px;">Restore Heart</h1>
+          <p>～ Men's Aromatreatment ～</p>
         </div>
-        <div>
-          <p class="m-0">TEL：080-xxxx-xxxx</p>
-          <p>受付：12:00~24:00</p>
+        <div class="py-1 px-3 headerRight">
+          <strong style="color: rgb(255, 148, 166);">～完全予約制～</strong>
+          <p class="m-0">受付：12:00～24:00</p>
+          <p class="m-0">Email:</p>
+          <a href="mailto:restoreheart6312&#64;gmail.com" class="headerRight__mail">restoreheart6312@gmail.com</a>               
         </div>
       </div>
-
     </header>
     
     <main class="py-5">
       <!-- スライド -->
-      <div id="carouselExampleFade" class="carousel slide carousel-fade col-lg-9 m-auto" data-ride="carousel"　data-wrap="true" style="height: 500px;">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade col-md-9 m-auto" data-ride="carousel"　data-wrap="true" style="height: 500px;">
         <div class="carousel-inner">
           <div class="carousel-item active" data-interval="10000">
             <img class="d-block w-100" src="image/S__108978195.jpg" alt="第1スライド" style="height: 500px;">
@@ -62,45 +67,80 @@
         </a>
       </div>
       <!-- メイン -->
-      <div class="col-lg-9 m-auto py-5">
+      <div class="col-lg-12 col-md-9 col-sm-12 col-xs-12 m-auto py-5">
         <!-- コンテンツ１-->
-        <h2 class="text-center pb-5">／ About Us ／</h2>
+        <h2 class="text-center pt-5 border-bottom">／ About Us ／</h2>
         <div class="d-lg-flex">
-          <div class="p-2" style="background-color: rgba(245, 245, 220, 0.3);">
-            <p>女性専用のサロンになります。 </p>
-            <p>私たちは女性がより社会で輝けるようなサポートが出来るように願いを込め、サロンをオープンいたしました。</p>
-            <p>第二のホームとなるように、入りやすい環境を作って参りますので是非お気軽にお声がけください。</p>
+          <div class="p-5 contentText"> 
+            <h3 class="text-center border-bottom">～サロンについて～</h3>
+            <p class="pt-3">
+              "Rest Heart"はJR豊田駅南口より徒歩2分、男性セラピストによる完全予約制のアロマトリートメントサロンです。
+            </p>
+            <p>
+              男性セラピストによる癒しの空間での最高のひと時をお過ごし下さい。
+            </p>
           </div>
-          <div>
-            <img class="d-block w-100" src="image/S__108978195.jpg" alt="第1スライド" style="height: 500px;">
+          <div  class="col-lg-6 p-0">
+            <img class="d-block w-100" src="image/S__108978195.jpg" alt="第1スライド" style="">
           </div>
         </div>
         <!-- コンテンツ２ -->
-        <h2 class="text-center py-5">／ Therapist ／</h2>
+        <h2 class="text-center pt-5 mt-5 border-bottom">／ Therapist ／</h2>
         <div class="d-lg-flex">
-          <div>
-            <img class="d-block w-100" src="image/S__108978195.jpg" alt="第1スライド" style="height: 500px;">
+          <div class="col-lg-6 p-0">
+            <img class="d-block w-100" src="image/member1.jpg" alt="TherapistPicture">
           </div>
-          <div class="p-2" style="background-color: rgba(245, 245, 220, 0.3);">
-            <p>女性専用のサロンになります。 </p>
-            <p>私たちは女性がより社会で輝けるようなサポートが出来るように願いを込め、サロンをオープンいたしました。</p>
-            <p>第二のホームとなるように、入りやすい環境を作って参りますので是非お気軽にお声がけください。</p>
+          <div class="p-5 contentText">
+            <h3 class="text-center border-bottom">～プロフィール～</h3>
+            <p class="pt-3">名前：村野 絢</p>
+            <p>趣味：ヨガ、クラシック</p>
+            <p>資格：アロマセラピスト検定1級、MTSディプロマ</p>
+            <p class="m-0">メッセージ：
+              第二のホームとなるように、入りやすい環境を作って参りますので是非お気軽にお声がけください。
+            </p>
           </div>
         </div>
-      </div>
+        <!-- コンテンツ３ -->
+        <h2 class="text-center pt-5 mt-5 border-bottom">／ price ／</h2>
+        <div class="d-lg-flex">
+          <div class="contentText col-lg-6 p-5"> 
+            <h3 class="text-center border-bottom">～Treatment Menu～</h3>
+            <p class="pt-3 text-center">アロマトリートメント</p>
+            <div class="contentPrice">
+              <p>・</p>
+              <p>・</p>
+              <p>・</p>
+              <p>90分コース（施術60分）8,000円</p>
+              <p>120分コース（施術90分）10,000円</p>
+              <p>150分コース（施術120分）14,000円</p>
+              <p>180分コース（施150分）18,000円</p>
+            </div>
+            
+          </div>
+          <div class="col-lg-6 p-0">
+            <img class="d-block w-100" src="image/price.jpg" alt="price" style="">
+          </div>
+        </div>
+        
     </main>
 
     <footer class="py-3 text-center border-top">
-      <h5>／ Follow Us ／</h5>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-facebook"></i>
+      <h5 class="pb-3">／ Follow Us ／</h5>
+      <i class="fab fa-instagram p-0"></i>
+      <span>（restoreheat6312）</span>
+      <!-- <i class="fab fa-facebook"></i>
       <i class="fab fa-twitter"></i>
-      <i class="fab fa-line"></i>
+      <i class="fab fa-line"></i> -->
       <p class="m-0">
-        上記SNSでも、ご相談、ご予約承っております。<br>
-        お気軽にご連絡下さいませ。
+        インスタでも、ご相談、ご予約承っております。<br>
+        インスタで雰囲気を確認しながら、お気軽にご連絡下さいませ。
       </p>
-      
+
+      <h5 class="py-3">／ Access ／</h5>
+      <p>〒191-0053 東京都日野市豊田3丁目39−22 こちらの<strong class="text-danger">2階</strong>になります。</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.755619352553!2d139.3779882146523!3d35.65839218019962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e26cac6dbb47%3A0xf8367a5d5d0375f9!2z44CSMTkxLTAwNTMg5p2x5Lqs6YO95pel6YeO5biC6LGK55Sw77yT5LiB55uu77yT77yZ4oiS77yS77yS!5e0!3m2!1sja!2sjp!4v1578461274995!5m2!1sja!2sjp" 
+      width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
     </footer>
 
     <script>
