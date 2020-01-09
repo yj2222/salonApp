@@ -25,7 +25,19 @@
   transition : all 1500ms;
 }
 
-.fadein.scrollin{
+.fadein2 {
+  opacity: 0;
+  transform : translate(0, 50px);
+  transition : all 3000ms;
+}
+
+.fadein3 {
+  opacity: 0;
+  transform : translate(0, 50px);
+  transition : all 4500ms;
+}
+
+.scrollin{
   opacity: 1;
   transform: translate(0, 0);
 }
