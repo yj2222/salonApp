@@ -1,10 +1,10 @@
-header{
+/* header{
   position: fixed;
   top: 0;
   z-index: 10;
   width: 100%;
   background-color: white;
-}
+} */
 
 /* .displayNone{
   display: none;
@@ -17,6 +17,17 @@ header{
 
 .show {
   opacity: 1;
+}
+
+.fadein {
+  opacity: 0;
+  transform : translate(0, 50px);
+  transition : all 1500ms;
+}
+
+.fadein.scrollin{
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .headerTitle{
