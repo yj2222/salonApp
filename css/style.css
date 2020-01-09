@@ -6,6 +6,19 @@ header{
   background-color: white;
 }
 
+/* .displayNone{
+  display: none;
+} */
+
+.headImage2,.headImage3,.headImage4,.headImage5,.headImage6,.headImage7,.headImage8,.headImage9{
+  opacity: 0;
+  transition: 2s;
+}
+
+.show {
+  opacity: 1;
+}
+
 .headerTitle{
   /* font-family: cursive; */
   font-style  : italic; 

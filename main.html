@@ -24,6 +24,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
       crossorigin="anonymous"></script>
+      <!-- JQueryのCDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>title</title>
   </head>
   <body>
@@ -42,23 +44,25 @@
       </div>
     </header> -->
 
-    <div class="">
+    <div id="headImage">
       <div class="d-flex">
-        <img class="d-block w-25" src="image/logo2.jpg" alt="">
-        <img class="d-block w-25" src="image/salon3.jpg" alt="">
-        <img class="d-block w-50" src="image/salon11.jpg" alt="">
+        <img class="d-block w-25 headImage2" src="image/logo2.jpg" alt="">
+        <img class="d-block w-25 headImage3" src="image/salon3.jpg" alt="">
+        <img class="d-block w-50 headImage4" src="image/salon11.jpg" alt="">
+      </div>
+      <div class="d-flex" id="headImage1">
+        <img class="d-block w-25 headImage9" src="image/salon12.jpg" alt="">
+        <img class="d-block w-50 headImage1" src="image/logo.jpg" alt="">
+        <img class="d-block w-25 headImage5" src="image/salon5.jpg" alt="">
       </div>
       <div class="d-flex">
-        <img class="d-block w-25" src="image/salon12.jpg" alt="">
-        <img class="d-block w-50" src="image/logo.jpg" alt="">
-        <img class="d-block w-25" src="image/salon5.jpg" alt="">
-      </div>
-      <div class="d-flex">
-        <img class="d-block w-50" src="image/salon8.jpg" alt="">
-        <img class="d-block w-25" src="image/salon10.jpg" alt="">
-        <img class="d-block w-25" src="image/salon4.jpg" alt="">
+        <img class="d-block w-50 headImage8" src="image/salon8.jpg" alt="">
+        <img class="d-block w-25 headImage7" src="image/salon10.jpg" alt="">
+        <img class="d-block w-25 headImage6" src="image/salon4.jpg" alt="">
       </div>
     </div>
+
+    <!-- <button id="test">test</button> -->
 
     
     
@@ -168,6 +172,43 @@
 
     <script>
     $(function(){
+
+      $(".headImage1").hide().fadeIn(1000);
+
+      setTimeout(function(){
+        $(".headImage2").addClass('show');
+      },500);
+
+      setTimeout(function(){
+        $(".headImage3").addClass('show');
+      },1000);
+      
+      setTimeout(function(){
+        $(".headImage4").addClass('show');
+      },1500);
+      
+      setTimeout(function(){
+        $(".headImage5").addClass('show');
+      },2000);
+      
+      setTimeout(function(){
+        $(".headImage6").addClass('show');
+      },2500);
+      
+      setTimeout(function(){
+        $(".headImage7").addClass('show');
+      },3000);
+
+      setTimeout(function(){
+        $(".headImage8").addClass('show');
+      },3500);
+
+      setTimeout(function(){
+        $(".headImage9").addClass('show');
+      },4000);
+      
+
+
     });
     </script>
 
