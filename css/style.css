@@ -13,7 +13,7 @@
 .headImage2,.headImage3,.headImage4,.headImage5,.headImage6,.headImage7,.headImage8,.headImage9{
   opacity: 0;
   transition: 2s;
-  /* height: 100%; */
+  height: 100%;
 }
 
 .show {
