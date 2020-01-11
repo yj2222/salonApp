@@ -63,9 +63,10 @@
   color: rgb(87, 226, 87);
 }
 
-.sliderSize{
-  /* height: 500px; */
-}
+/* .sliderSize{
+  height: 400px;
+  object-fit: cover
+} */
 
 .contentText{
   background-color: rgba(245, 245, 220, 0.3);

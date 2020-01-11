@@ -67,24 +67,6 @@
       </div>
     </div>
 
-    <!-- <div id="headImage">
-      <div class="d-flex">
-        <img class="d-block w-25 headImage2 img-fluid" src="image/logo2.jpg" alt="">
-        <img class="d-block w-25 headImage3 img-fluid" src="image/salon3.jpg" alt="">
-        <img class="d-block w-50 headImage4 img-fluid" src="image/salon11.jpg" alt="">
-      </div>
-      <div class="d-flex" id="headImage1">
-        <img class="d-block w-25 headImage9 img-fluid" src="image/salon12.jpg" alt="">
-        <img class="d-block w-50 headImage1 img-fluid" src="image/logo.jpg" alt="">
-        <img class="d-block w-25 headImage5 img-fluid" src="image/salon5.jpg" alt="">
-      </div>
-      <div class="d-flex">
-        <img class="d-block w-50 headImage8 img-fluid" src="image/salon8.jpg" alt="">
-        <img class="d-block w-25 headImage7 img-fluid" src="image/salon10.jpg" alt="">
-        <img class="d-block w-25 headImage6 img-fluid" src="image/salon4.jpg" alt="">
-      </div>
-    </div> -->
-
     <header class="px-md-5 py-5">
       <div class="">
         <div class="headerTitle">
@@ -111,43 +93,93 @@
       </div>
     </header>
 
+    <div class="" style="background-image: url(image/mainBack.jpg);">
+      <!-- スライド -->
+      <div id="carouselExampleFade" class="carousel slide carousel-fade m-auto col-lg-8 col-md-10 p-3" data-ride="carousel"　data-wrap="true" >
+        <div class="carousel-inner">
+          <!-- data-intervalで切り替え間隔を調整 -->
+          <div class="carousel-item active frameOrange" data-interval="5000">
+            <img class="d-block w-100 sliderSize" src="image/salon1.jpg" alt="第1スライド" >
+          </div>
+          <div class="carousel-item frameOrange" data-interval="5000">
+            <img class="d-block w-100 sliderSize" src="image/salon2.jpg" alt="第2スライド" >
+          </div>
+          <div class="carousel-item frameWhite" data-interval="5000">
+            <img class="d-block w-100 sliderSize" src="image/salon13.jpg" alt="第3スライド" >
+          </div>
+          <div class="carousel-item frameWhite" data-interval="5000">
+            <img class="d-block w-100 sliderSize" src="image/salon14.jpg" alt="第4スライド" >
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">前へ</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">次へ</span>
+        </a>
+      </div>
+    </div>
+
     <main class="py-5">
       <!-- メインコンテンツ -->
       <div class="col-lg-12 col-md-9 col-sm-12 col-xs-12 m-auto py-5">
         <!-- コンテンツ１-->
         <h2 class="text-center border-bottom font-weight-bold">／ About Us ／</h2>
-        <div class="d-lg-flex fadein">
-          <div class="py-5 px-sm-5 contentText"> 
-            <h3 class="text-center border-bottom font-weight-bold">～サロンについて～</h3>
-            <p>ここにメッセージを入れる！村野さん考えてーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー</p>
-          </div>
-          <div  class="col-lg-6 p-0">
-            <!-- スライド -->
-            <div id="carouselExampleFade" class="carousel slide carousel-fade m-auto sliderSize" data-ride="carousel"　data-wrap="true" >
-              <div class="carousel-inner">
-                <!-- data-intervalで切り替え間隔を調整 -->
-                <div class="carousel-item active frameOrange" data-interval="5000">
-                  <img class="d-block w-100" src="image/salon1.jpg" alt="第1スライド" >
-                </div>
-                <div class="carousel-item frameOrange" data-interval="5000">
-                  <img class="d-block w-100" src="image/salon2.jpg" alt="第2スライド" >
-                </div>
-                <div class="carousel-item frameWhite" data-interval="5000">
-                  <img class="d-block w-100" src="image/salon13.jpg" alt="第3スライド" >
-                </div>
-                <div class="carousel-item frameWhite" data-interval="5000">
-                  <img class="d-block w-100" src="image/salon14.jpg" alt="第4スライド" >
-                </div>
+        <div class="fadein">
+          <div class="px-0 py-5 px-sm-5 contentText col-lg-8 m-auto "> 
+            <!-- コンテンツ１−１ -->
+            <h3 class="text-center border-bottom font-weight-bold ">～サロンについて～</h3>
+            <div class="d-sm-flex">
+              <p class="col-sm-8">
+                当サロンのホームページをご覧いただき誠にありがとうございます。<br>
+                サロンオーナー兼セラピストをさせていただいています、村野(シュン)と申します。<br>
+                当サロン、Restore Heart  (リストアハート)  は「心を取り戻す」をコンセプトにアロマセラピーやアロマトリートメントの
+                施術をさせていただいている、メンズセラピストのサロンとなっております。
+              </p>
+              <div class="col-sm-4 p-0">
+                <img class="d-block w-100 designBorder" src="image/member2.jpg" alt="背術風景画像">
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">前へ</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">次へ</span>
-              </a>
             </div>
+            <!-- コンテンツ１−２ -->
+            <h3 class="text-center border-bottom font-weight-bold pt-5">〜メンズセラピストについて〜</h3>
+            <div class="d-sm-flex">
+              <div class="col-sm-4">
+                <img class="d-block w-100" src="image/salon13.jpg" alt="背術風景画像">
+              </div>
+              <p class="col-sm-8">
+                メンズセラピストは海外においてはスタンダードですが、日本ではまだまだ少ない傾向です、ですが少しづつではありますが増えております。
+              </p>
+            </div>
+            <!-- コンテンツ１−3 -->
+            <h3 class="text-center border-bottom font-weight-bold pt-5">～メンズセラピストのメリット～</h3>
+            <div class="d-sm-flex">
+              <p class="col-sm-8">
+                手が大きく、筋力もある男性のトリートメントは、お客様の身体を優しくて包むようなトリートメントに加えて、筋力をしっかり捉えてほぐすことができます。<br>
+                また、強めの圧を持続して無理なくかけることや女性ホルモンが整う作用もあると言われています<br>
+              </p>
+              <div class="col-sm-4 p-0">
+                <img class="d-block w-100" src="image/salon1.jpg" alt="背術のアップ画像">
+              </div>
+            </div>
+            <!-- コンテンツ１−4 -->
+            <h3 class="text-center border-bottom font-weight-bold pt-5">〜メンズセラピストへの不安〜</h3>
+            <div class="d-sm-flex">
+              <div class="col-sm-4">
+                <img class="d-block w-100" src="image/salon1.jpg" alt="店の画像、横２枚">
+                <img class="d-block w-100" src="image/salon14.jpg" alt="店の画像、横２枚">
+              </div>
+              <p class="col-sm-8">
+                メンズセラピストに不安を感じている方もいらしゃると思います。<br>
+                男性が女性の肌に直接触れるという形での施術になるので私達メンスセラピストは細心の注意と気配り心遣いを大切にしております。<br>
+                具体的には(カウンセリング、タオルワーク、施術中の声かけなど)特にカウセリングにてお客様のご不安を取り除きリラックスしていただくよう心掛けております。<br>
+                是非、リストアハートに心身の癒しを求めてきてください、ご不安ごとやご質問ございましたらお気軽にお問い合わせください。<br>
+                皆様のご予約、ご来店を心よりお待ちしております。
+              </p>
+            </div>
+
+
           </div>
         </div>
         <!-- コンテンツ２ -->
