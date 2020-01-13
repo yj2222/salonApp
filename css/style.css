@@ -138,3 +138,51 @@ h2,footer{
 	inset 0 0 200px rgba(0, 0, 0, 0.2);
 	background: rgba(255, 255, 255, 0.2); /* カラーを重ねる */
 }
+
+.originalIcon{
+  background-color: rgb(200, 200, 200);
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  line-height: 80px;
+  font-size: 40px;
+  color: white;
+}
+
+.originalIcon2{
+  line-height: 80px;
+  color: rgb(21, 118, 21);
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.originalIcon3{
+  background-color: rgb(200, 200, 200);
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  line-height: 80px;
+  font-size: 20px;
+  color: white;
+
+}
+
+.blogLink{
+  background-color: white;
+  color: black;
+}
+
+.blogLink:hover{
+  opacity: 0.5;
+  color: black;
+  transition: 0.3s;
+}
+
+.blogImageSize{
+  height: 100px;
+  object-fit: cover;
+}
+/* 
+a:hover{
+  text-decoration: none;
+} */
