@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: 'Noto Serif JP', serif;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+img{
+  border: none;
+  vertical-align: bottom;
+}
+/* common */
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.accent-red{
+  color: rgb(232, 92, 92);
+}
+.accent-blue{
+  color: rgb(84, 84, 211);
+}
+.main-color{
+  color: rgb(57, 176, 57);
+}
+.dark-color{
+  color: darkgreen;
+}
+.flex-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+/* header */
+header{
+  color: darkgreen;
+  background: beige;
+  padding: 10px;
+}
+h1, header p{
+  font-family: 'Nova Mono', monospace;
+  padding-left: 65px;
+}
+header > .container{
+  background: url(../image/logo1.png) left/60px no-repeat;
+}
+/* slider */
+.slider-wrap{
+  background: url(../image/slider-bg.jpg) repeat-x;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+.slider-wrap > .container{
+  position: relative;
+}
+.slide{
+  display: none;
+  opacity: 0;
+  text-align: center;
+  transition: transform 0.5s;
+}
+.active{
+  display: block;
+  opacity: 1;
+}
+.slide > img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.slider-wrap i{
+  font-size: 50px;
+  color: beige;
+}
+.slider-wrap i#prev{
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.slider-wrap i#next{
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+@keyframes leftin{
+  0%{
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  50%{
+    transform: translateX(0);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.leftin{
+  animation: leftin 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes rightin{
+  0%{
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  50%{
+    transform: translateX(0);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.rightin{
+  animation: rightin 2s;
+  animation-fill-mode: forwards;
+}
+/* main top */
+h2,h3{
+  color: darkgreen;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+section.reserv{
+  text-align: center;
+  margin-bottom: 100px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+p.caution{
+  color: rgb(255, 137, 156);
+  margin-bottom: 50px;
+}
+p.message{
+  font-size: 30px;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+.reserv__mail{
+  text-align: right;
+}
+/* main contents */
+main.container{
+  padding: 0 10px;
+}
+main section{
+  background: beige;
+  padding: 50px;
+}
+h3{
+  font-size: 40px;
+}
+.in-a-word{
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+.in-a-word .ciecle{
+  background: lightgray;
+  padding: 20px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
+section.about-salon img{
+  float: right;
+  width: 200px;
+  margin-left: 20px;
+}
+section p.discription{
+  line-height: 1.7;
+  font-weight: bold;
+}
+.about-therapist img{
+  display: block;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+.about-merit img{
+  float: left;
+  width: 200px;
+  margin-right: 20px;
+}
+.about-feel-uneasy{
+  margin-bottom: 100px;
+}
+.about-feel-uneasy .ciecle{
+  padding: 0;
+  font-size: 30px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+.about-feel-uneasy img{
+  float: right;
+  margin-left: 20px;
+}
+/* therapist */
+section.therapist{
+  margin-bottom: 100px;
+}
+section.therapist h3{
+  text-align: left;
+  font-size: 30px;
+}
+.plofile-slider{
+  margin-right: 20px;
+}
+.plofile-slider img{
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+table th{
+  white-space: nowrap;
+  background: darkgreen;
+  color: white;
+  padding: 10px;
+}
+table td{
+  font-size: 16px;
+  line-height: 1.6;
+  background: white;
+  padding: 10px;
+}
+section.therapist h3:nth-of-type(2){
+  margin-top: 50px;
+}
+article{
+  width: 30%;
+  margin: 0 10px;
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  transition: .3s;
+}
+article:hover{
+  box-shadow: 1px 1px 10px gray, -1px -1px 20px gray;
+}
+article img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+article h4{
+  margin-left: 5px;
+}
+article p{
+  font-size: 16px;
+  padding: 5px;
+  line-height: 1.5;
+}
+/* price */
+section.price{
+  margin-bottom: 100px;  
+}
+section.price ul{
+  background: url(../image/salon7.jpg) center/cover no-repeat;
+  padding: 50px;
+}
+section.price li{
+  background: rgba(255, 255, 255, 0.8);
+  line-height: 2;
+  text-align: center;
+  font-weight: bold;
+}
+section.price li:first-child{
+  padding-top: 50px;
+}
+section.price li:last-child{
+  padding-bottom: 50px;
+}
+/* footer */
+footer{
+  background: lightgray;
+  padding: 50px 10px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+footer h2{
+  /* color: black; */
+  font-size: 30px;
+  border-bottom: 1px solid darkgreen;
+}
+footer i{
+  color: #fcc37d;
+  background: linear-gradient(to bottom, #5c1ac7 15%, #e12814 40%, #fcc37d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+section.sns{
+  margin-bottom: 100px;
+}
+section.sns p{
+  line-height: 1.5;
+}
+section.access{
+  margin-bottom: 100px;
+}
+section.access p{
+  margin-bottom: 20px;
+}
+footer > p{
+  padding-top: 50px;
+  border-top: 1px solid darkgreen;
+}
+
+
+

@@ -1,121 +1,76 @@
-@charset "utf-8";
+/* header{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+} */
 
-/* reset */
-*{
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  box-sizing: border-box;
-  font-family: 'Noto Serif JP', serif;
-}
-a{
-  text-decoration: none;
-}
-img{
-  border: none;
-  vertical-align: bottom;
-}
-/* common */
-:root{
-  --bg-color: rgba(245, 245, 220, 0.3);
-}
-/* top page animation */
-#headImage{
-  background: var(--bg-color);
-}
-.imgWrap{
-  max-width: 960px;
-  margin: 0 auto;
-}
+/* .displayNone{
+  display: none;
+} */
+
 .headImage2,.headImage3,.headImage4,.headImage5,.headImage6,.headImage7,.headImage8,.headImage9{
   opacity: 0;
   transition: 2s;
   height: 100%;
 }
+
 .show {
   opacity: 1;
 }
+
 .fadein {
   opacity: 0;
   transform : translate(0, 50px);
   transition : all 1500ms;
 }
+
 .fadein2 {
   opacity: 0;
   transform : translate(0, 50px);
   transition : all 3000ms;
 }
+
 .fadein3 {
   opacity: 0;
   transform : translate(0, 50px);
   transition : all 4500ms;
 }
+
 .scrollin{
   opacity: 1;
   transform: translate(0, 0);
 }
-/* header */
+
 .headerTitle{
+  /* font-family: cursive; */
+  font-style  : italic; 
+  font-family: 'Dancing Script', cursive;
   text-align: center;
   font-size: 20px;
 }
-.headerTitle h1, .headerTitle p{
-  text-align: center;
-}
-.headerBottom{
+
+.headerRight{
+  background-color: rgba(245, 245, 220, 0.3); 
   border-radius: 10px;
+  font-family: 'MS Mincho';
   font-weight: bold;
-  max-width: 960px;
-  margin: 0 auto;
 }
-.headerBottom > p{
-  color: rgb(255, 131, 152);
-}
-.headerBottom__mail{
+
+.headerRight__mail{
   letter-spacing: -1px; 
   color: rgb(87, 226, 87);
 }
-/* slider */
-.mainTopSlider{
-  background-image: url(../image/mainBack.jpg);
-}
-.slide{
-  width: 960px;
-  margin: 0 auto;
-}
-.mainTopSlider img{
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  object-position: 50% 100%;
-}
-@media screen and (max-width: 992px){
-  .slide{
-    width: 600px;
-    margin: 0 auto;
-  }
-  .mainTopSlider img{
-    width: 100%;
-    height: 400px;
-  }
-}
-@media screen and (max-width: 767px){
-  .slide{
-    width: 300px;
-    margin: 0 auto;
-  }
-  .mainTopSlider img{
-    width: 100%;
-    height: 200px;
-  }
-}
-/* main contents */
-main{
-  max-width: 960px;
-  margin: 0 auto;
-}
+
+/* .sliderSize{
+  height: 400px;
+  object-fit: cover
+} */
+
 .contentText{
-  background-color: var(--bg-color);
+  background-color: rgba(245, 245, 220, 0.3);
+  font-family: 'MS Mincho';
   font-weight: bold;
 }
 
@@ -138,6 +93,11 @@ https://marie-web.design/blog/text-gradation/ */
   -webkit-text-fill-color: transparent;
 }
 
+h2,footer{
+  font-family: 'MS Mincho';
+  font-weight: bold;
+}
+
 .designBorder {
   /* border: outset 10px #900; */
   border: outset 20px brown;
@@ -148,7 +108,36 @@ https://marie-web.design/blog/text-gradation/ */
 	position: relative;
 }
 
+.frameOrange:after {
+	position: absolute;
+	display: block;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5),
+	inset 0 0 200px rgba(0, 0, 0, 0.2);
+	background: rgba(255, 100, 0, 0.1); /* カラーを重ねる */
+}
 
+.frameWhite {
+	display: inline-block;
+	position: relative;
+}
+
+.frameWhite:after {
+	position: absolute;
+	display: block;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5),
+	inset 0 0 200px rgba(0, 0, 0, 0.2);
+	background: rgba(255, 255, 255, 0.2); /* カラーを重ねる */
+}
 
 .originalIcon{
   background-color: rgb(200, 200, 200);
@@ -159,12 +148,14 @@ https://marie-web.design/blog/text-gradation/ */
   font-size: 40px;
   color: white;
 }
+
 .originalIcon2{
   line-height: 80px;
   color: rgb(21, 118, 21);
   font-size: 40px;
   font-weight: 100;
 }
+
 .originalIcon3{
   background-color: rgb(200, 200, 200);
   width: 80px;
@@ -173,6 +164,7 @@ https://marie-web.design/blog/text-gradation/ */
   line-height: 80px;
   font-size: 20px;
   color: white;
+
 }
 
 .blogLink{
@@ -190,8 +182,7 @@ https://marie-web.design/blog/text-gradation/ */
   height: 100px;
   object-fit: cover;
 }
-footer .g-map{
-  margin: 0 auto;
-  max-width: 500px;
-  height: 400px;
-}
+/* 
+a:hover{
+  text-decoration: none;
+} */
