@@ -6,7 +6,12 @@ window.onload = function(){
   let $activeIndex = 0;
   let $slideFirst = '';
   let $slideLast = '';
-
+  // スワイプの変数
+  let swipeItem = document.querySelector('.slider-wrap');
+  let startX = 0;
+  let moveX = 0;
+  const minMove = 30;
+  // slider起動時の変数再代入メソッド
   function setList(){
     $slideList = Array.from(document.getElementsByClassName('slide'));
     $active = document.querySelector('.active');
@@ -42,4 +47,22 @@ window.onload = function(){
   setInterval(function(){ 
     document.getElementById('next').click();
   },10000);
+  // スワイプイベント 
+  swipeItem.addEventListener("touchstart", function(e) {
+    e.preventDefault();
+    startX = e.touches[0].pageX;
+  });
+  swipeItem.addEventListener("touchmove", function(e) {
+    e.preventDefault();
+    moveX = e.changedTouches[0].pageX;
+    console.log(`X=${startX}~${moveX}`);
+  });
+  swipeItem.addEventListener("touchend", function(e) {
+    if(startX > moveX + minMove){ // 右から左スワイプ
+      document.getElementById('prev').click();
+    }
+    else if(startX + minMove < moveX){ // 左から右スワイプ
+      document.getElementById('next').click();
+    }
+  });
 }

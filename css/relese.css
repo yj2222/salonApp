@@ -37,9 +37,11 @@ img{
 :root{
   --bg-color: rgba(245, 245, 220, 0.5);
 }
-.flex-wrap{
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 768px){
+  .flex-wrap{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 /* background animation */
 @keyframes heart-beat{
@@ -83,7 +85,7 @@ img{
   transform: translate(-50%, -50%);
   animation: rotate-word 5s infinite;
 }
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
   .bg-anime{
     width: 200px;
     height: 200px;
@@ -112,7 +114,7 @@ header p{
 header > .container{
   background: url(../image/logo2.png) left/60px no-repeat;
 }
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
   h1{
     font-size: 40px;
   }
@@ -144,7 +146,7 @@ header > .container{
   height: 200px;
   object-fit: cover;
 }
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
   .slide > img{
     width: 100%;
     height: 400px;
@@ -208,7 +210,7 @@ h2,h3{
 h3{
   font-size: 25px;
 }
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
   h2{
     font-size: 50px;
   }
@@ -231,7 +233,7 @@ p.message{
   line-height: 2;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
   p.message{
     font-size: 30px;
   }
@@ -247,7 +249,7 @@ main section{
   background: var(--bg-color);
   padding: 50px 10px;
 }
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
   main section{
     padding: 50px;
   }
@@ -265,13 +267,18 @@ main section{
   border-radius: 50%;
   color: white;
   font-weight: bold;
+  transition: 1s;
+}
+.ciecle.feedup{
+  opacity: 0;
+  transform: translateY(50px);
 }
 section.about-salon img{
   display: block;
   width: 200px;
   margin: 0 auto 20px;
 }
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
   section.about-salon img{
     float: right;
     margin-left: 20px;
@@ -294,7 +301,7 @@ section p.discription{
   /* margin: 0 auto 20px; */
   margin-bottom: 20px;
 }
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
   .about-merit img{
     float: left;
     width: 200px;
@@ -318,7 +325,7 @@ section p.discription{
   width: 100%;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
   .about-feel-uneasy img{
     width: 300px;
     float: right;
@@ -331,21 +338,44 @@ section.therapist{
 }
 section.therapist h3{
   text-align: left;
-  font-size: 30px;
 }
 .plofile-slider{
-  margin-right: 20px;
+  margin: 0 auto 20px;
+  width: 280px;
 }
-.plofile-slider img{
-  width: 200px;
-  height: 300px;
+.plofile-slider > img{
+  display: block;
+  width: 100%;
+  height: 280px;
   object-fit: cover;
+  border: 10px inset darkred;
+  margin-bottom: 20px;
+}
+.plofile-slider > ul{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  background: white;
+}
+.plofile-slider > ul img{
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+@media screen and (min-width: 768px){
+  .plofile-slider{
+    margin-right: 20px;
+  }
 }
 table th{
   white-space: nowrap;
   background: darkgreen;
   color: white;
   padding: 10px;
+  font-size: 16px;
+}
+table tr:first-of-type th{
+  letter-spacing: -2px;
 }
 table td{
   font-size: 16px;
@@ -357,8 +387,8 @@ section.therapist h3:nth-of-type(2){
   margin-top: 50px;
 }
 article{
-  width: 30%;
-  margin: 0 10px;
+  max-width: 300px;
+  margin: 0 auto 20px;
   background: white;
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -374,12 +404,21 @@ article img{
   margin-bottom: 10px;
 }
 article h4{
-  margin-left: 5px;
+  margin-left: 10px;
+  color: darkgreen;
+  font-weight: bold;
+  font-size: 22px;
 }
 article p{
   font-size: 16px;
-  padding: 5px;
+  padding: 5px 10px 10px;
   line-height: 1.5;
+}
+@media screen and (min-width: 768px){
+  article{
+    width: 100%;
+    margin: 0 10px;
+  }
 }
 /* price */
 section.price{
@@ -387,13 +426,14 @@ section.price{
 }
 section.price ul{
   background: url(../image/salon7.jpg) center/cover no-repeat;
-  padding: 50px;
+  padding: 10px;
 }
 section.price li{
   background: rgba(255, 255, 255, 0.8);
   line-height: 2;
   text-align: center;
   font-weight: bold;
+  font-size: 16px;
 }
 section.price li:first-child{
   padding-top: 50px;
@@ -401,16 +441,25 @@ section.price li:first-child{
 section.price li:last-child{
   padding-bottom: 50px;
 }
+@media screen and (min-width: 768px){
+  section.price ul{
+    padding: 50px;
+  }
+  section.price li{
+    font-size: 20px;
+  }
+}
 /* footer */
 footer{
   background: lightgray;
-  padding: 50px 10px;
   color: black;
   text-align: center;
   font-weight: bold;
 }
+footer > .container{
+  padding: 50px 10px;
+}
 footer h2{
-  /* color: black; */
   font-size: 30px;
   border-bottom: 1px solid darkgreen;
 }
@@ -428,16 +477,11 @@ section.sns{
 section.sns p{
   line-height: 1.5;
 }
-section.access{
-  margin-bottom: 100px;
-}
 section.access p{
   margin-bottom: 20px;
 }
 footer > p{
-  padding-top: 50px;
-  border-top: 1px solid darkgreen;
+  padding: 30px 0;
+  background: darkgreen;
+  color: white;
 }
-
-
-
