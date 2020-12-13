@@ -34,27 +34,96 @@ img{
 .dark-color{
   color: darkgreen;
 }
+:root{
+  --bg-color: rgba(245, 245, 220, 0.5);
+}
 .flex-wrap{
   display: flex;
   justify-content: space-between;
 }
+/* background animation */
+@keyframes heart-beat{
+  10%{
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  20%{
+    transform: translate(-50%, -50%) scale(1);
+  }
+  30%{
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  40%{
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.bg-anime{
+  background: url(../image/logo3.png) center/cover no-repeat;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  animation: heart-beat 3s infinite;
+}
+@keyframes rotate-word{
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.bg-anime2{
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../image/logo5.png) center/cover no-repeat;
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  animation: rotate-word 5s infinite;
+}
+@media screen and (min-width: 767px){
+  .bg-anime{
+    width: 200px;
+    height: 200px;
+  }
+  .bg-anime2{
+    width: 600px;
+    height: 600px;
+  }
+}
 /* header */
 header{
   color: darkgreen;
-  background: beige;
+  background: var(--bg-color);
   padding: 10px;
 }
 h1, header p{
-  font-family: 'Nova Mono', monospace;
   padding-left: 65px;
+  font-family: 'Nova Mono', monospace;
+}
+h1{
+  font-size: 32px;
+}
+header p{
+  font-size: 16px;
 }
 header > .container{
-  background: url(../image/logo1.png) left/60px no-repeat;
+  background: url(../image/logo2.png) left/60px no-repeat;
+}
+@media screen and (min-width: 767px){
+  h1{
+    font-size: 40px;
+  }
+  header p{
+    font-size: 20px;
+  }
 }
 /* slider */
 .slider-wrap{
   background: url(../image/slider-bg.jpg) repeat-x;
-  padding: 50px 0;
+  padding: 50px 10px;
   margin-bottom: 50px;
 }
 .slider-wrap > .container{
@@ -72,21 +141,27 @@ header > .container{
 }
 .slide > img{
   width: 100%;
-  height: 400px;
+  height: 200px;
   object-fit: cover;
+}
+@media screen and (min-width: 767px){
+  .slide > img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
 }
 .slider-wrap i{
   font-size: 50px;
-  color: beige;
-}
-.slider-wrap i#prev{
+  color: var(--bg-color);
   position: absolute;
   top: 50%;
+  transform: translate(0, -50%);
+}
+.slider-wrap i#prev{
   left: 0;
 }
 .slider-wrap i#next{
-  position: absolute;
-  top: 50%;
   right: 0;
 }
 @keyframes leftin{
@@ -125,10 +200,21 @@ header > .container{
 h2,h3{
   color: darkgreen;
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 50px;
   border-bottom: 1px solid lightgray;
   padding-bottom: 10px;
+}
+h3{
+  font-size: 25px;
+}
+@media screen and (min-width: 767px){
+  h2{
+    font-size: 50px;
+  }
+  h3{
+    font-size: 40px;
+  }
 }
 section.reserv{
   text-align: center;
@@ -141,9 +227,14 @@ p.caution{
   margin-bottom: 50px;
 }
 p.message{
-  font-size: 30px;
+  font-size: 20px;
   line-height: 2;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 767px){
+  p.message{
+    font-size: 30px;
+  }
 }
 .reserv__mail{
   text-align: right;
@@ -153,11 +244,13 @@ main.container{
   padding: 0 10px;
 }
 main section{
-  background: beige;
-  padding: 50px;
+  background: var(--bg-color);
+  padding: 50px 10px;
 }
-h3{
-  font-size: 40px;
+@media screen and (min-width: 767px){
+  main section{
+    padding: 50px;
+  }
 }
 .in-a-word{
   display: flex;
@@ -174,37 +267,63 @@ h3{
   font-weight: bold;
 }
 section.about-salon img{
-  float: right;
+  display: block;
   width: 200px;
-  margin-left: 20px;
+  margin: 0 auto 20px;
+}
+@media screen and (min-width: 767px){
+  section.about-salon img{
+    float: right;
+    margin-left: 20px;
+  }
 }
 section p.discription{
   line-height: 1.7;
   font-weight: bold;
 }
-.about-therapist img{
-  display: block;
+.about-therapist .img-box{
   max-width: 600px;
-  margin: 0 auto 50px;
+  margin: 0 auto 20px;
+}
+.about-therapist img{
+  width: 100%;
 }
 .about-merit img{
-  float: left;
-  width: 200px;
-  margin-right: 20px;
+  /* display: block; */
+  width: 100%;
+  /* margin: 0 auto 20px; */
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 767px){
+  .about-merit img{
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+  }
 }
 .about-feel-uneasy{
   margin-bottom: 100px;
 }
+.about-feel-uneasy .in-a-word{
+  font-size: 30px;
+}
 .about-feel-uneasy .ciecle{
   padding: 0;
-  font-size: 30px;
-  width: 100px;
-  line-height: 100px;
+  font-size: 20px;
+  width: 80px;
+  line-height: 80px;
   text-align: center;
 }
 .about-feel-uneasy img{
-  float: right;
-  margin-left: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 767px){
+  .about-feel-uneasy img{
+    width: 300px;
+    float: right;
+    margin-left: 20px;
+  }
 }
 /* therapist */
 section.therapist{
