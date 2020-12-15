@@ -16,10 +16,12 @@ ul{
 img{
   border: none;
   vertical-align: bottom;
+  /* max-width: 100%;
+  height: auto; */
 }
 /* common */
 .container{
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .accent-red{
@@ -29,7 +31,7 @@ img{
   color: rgb(84, 84, 211);
 }
 .main-color{
-  color: rgb(57, 176, 57);
+  color: #39b039;
 }
 .dark-color{
   color: darkgreen;
@@ -100,9 +102,10 @@ header{
   color: darkgreen;
   background: var(--bg-color);
   padding: 10px;
+  border-bottom: 1px solid lightgray;
 }
 h1, header p{
-  padding-left: 65px;
+  padding-left: 50px;
   font-family: 'Nova Mono', monospace;
 }
 h1{
@@ -112,9 +115,12 @@ header p{
   font-size: 16px;
 }
 header > .container{
-  background: url(../image/logo2.png) left/60px no-repeat;
+  background: url(../image/logo2.png) left/contain no-repeat;
 }
 @media screen and (min-width: 768px){
+  h1, header p{
+    padding-left: 65px;
+  }
   h1{
     font-size: 40px;
   }
@@ -124,8 +130,10 @@ header > .container{
 }
 /* slider */
 .slider-wrap{
-  background: url(../image/slider-bg.jpg) repeat-x;
-  padding: 50px 10px;
+  /* background: linear-gradient(rgba(255, 255, 255, 0.699),rgba(255, 255, 255, 0.616)), url(../image/background-ivy.jpg) center/cover; */
+  /* background: url(../image/background-paturn2.jpg) left top/cover; */
+  /* padding: 10px 0; */
+  background: var(--bg-color);
   margin-bottom: 50px;
 }
 .slider-wrap > .container{
@@ -143,22 +151,27 @@ header > .container{
 }
 .slide > img{
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
   object-fit: cover;
 }
 @media screen and (min-width: 768px){
   .slide > img{
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
     object-fit: cover;
   }
 }
 .slider-wrap i{
   font-size: 50px;
-  color: var(--bg-color);
+  color: rgba(0, 100, 0, 0.3);
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  margin: 0 20px;
+  transition: .3s;
+}
+.slider-wrap i:hover{
+  color: darkgreen;
 }
 .slider-wrap i#prev{
   left: 0;
@@ -243,6 +256,7 @@ p.message{
 }
 /* main contents */
 main.container{
+  max-width: 960px;
   padding: 0 10px;
 }
 main section{
@@ -343,13 +357,17 @@ section.therapist h3{
   margin: 0 auto 20px;
   width: 280px;
 }
-.plofile-slider > img{
-  display: block;
+.plofile-slider .main-image{
   width: 100%;
   height: 280px;
-  object-fit: cover;
   border: 10px inset darkred;
+  background: white;
   margin-bottom: 20px;
+}
+.main-image img{
+  display: block;
+  height: 100%;
+  margin: 0 auto;
 }
 .plofile-slider > ul{
   width: 100%;

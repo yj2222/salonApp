@@ -1,4 +1,4 @@
-window.onload = function(){
+document.addEventListener('DOMContentLoaded', function(){
   // slider用の変数
   let $slideList = '';
   const $slideLen = document.getElementsByClassName('slide').length;
@@ -65,4 +65,4 @@ window.onload = function(){
       document.getElementById('next').click();
     }
   });
-}
+},false);
