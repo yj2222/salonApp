@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: 'Noto Serif JP', serif;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+img{
+  border: none;
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+/* common */
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+:root{
+  --main-color: rgba(240, 240, 172, 0.8);
+  --dark-color: darkgreen;
+  --light-color: #fffff8;
+}
+p{
+  line-height: 1.6;
+}
+/* body */
+body{
+  background: var(--main-color);
+}
+/* header */
+header{
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--light-color);
+  color: var(--dark-color);
+}
+h1, header p{
+  font-family: 'Nova Mono', monospace;
+}
+/* background animation */
+@keyframes heart-beat{
+  10%{
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  20%{
+    transform: translate(-50%, -50%) scale(1);
+  }
+  30%{
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  40%{
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.bg-anime{
+  background: url(../image/logo3.png) center/cover no-repeat;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -9999;
+  transform: translate(-50%, -50%);
+  animation: heart-beat 3s infinite;
+  opacity: 0.3;
+}
+@keyframes rotate-word{
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.bg-anime2{
+  /* background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../image/logo5.png) center/cover no-repeat; */
+  background: url(../image/logo5.png) center/cover no-repeat;
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -9999;
+  transform: translate(-50%, -50%);
+  animation: rotate-word 20s linear infinite;
+  opacity: 0.3;
+}
+@media screen and (min-width: 768px){
+  .bg-anime{
+    width: 200px;
+    height: 200px;
+  }
+  .bg-anime2{
+    width: 600px;
+    height: 600px;
+  }
+}
+/* key visual */
+@keyframes bg-position{
+  0%{
+    background-position: top;
+  }
+  100%{
+    background-position: center;
+  }
+}
+.key-vis{
+  background: url(../image/slide-image1.jpg) center/cover;
+  padding: 150px 0;
+  animation: bg-position 10s;
+}
+.key-vis p{
+  font-size: 35px;
+  color: var(--light-color);
+  text-shadow: 1px 1px 3px black;
+  /* text-align: center; */
+}
+.key-vis strong{
+  font-family: 'Allura', cursive;
+  font-size: 55px;
+  letter-spacing: 5px;
+}
+@keyframes feedin-word{
+  0%{ 
+    opacity: 0;
+    transform: translateX(-20px); 
+  }
+  100%{ 
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+.key-vis p span{
+  animation: feedin-word 2s;
+  display: inline-block;
+}

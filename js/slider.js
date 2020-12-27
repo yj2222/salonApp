@@ -19,21 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
     $slideFirst = $slideList.shift();
     $slideLast = $slideList.pop();
   }
-  // クリックイベント、セレクタ#next。
-  document.getElementById('next').onclick = function() {
-    setList();
-    // 最後の要素がactiveだった場合、１番目に戻る。
-    if($activeIndex === $slideLen - 1){
-      $slideFirst.classList.add('active', 'leftin');
-      $slideLast.classList.remove('active', 'leftin', 'rightin');
-    } else {
-      $active.classList.remove('active', 'leftin', 'rightin')
-      $active.nextElementSibling.classList.add('active', 'leftin');
-    }
-  };
-  // クリックイベント、セレクタ#prev。
-  document.getElementById('prev').onclick = function() {
-    setList();
+  function sliderPrev(){
     // 最初の要素がactiveだった場合、最後に戻る。
     if($activeIndex === 0){
       $slideFirst.classList.remove('active', 'leftin', 'rightin')
@@ -42,10 +28,39 @@ document.addEventListener('DOMContentLoaded', function(){
       $active.classList.remove('active', 'leftin', 'rightin')
       $active.previousElementSibling.classList.add('active', 'rightin')
     }
-  };
+  }
+  function sliderNext(){
+    // 最後の要素がactiveだった場合、１番目に戻る。
+    if($activeIndex === $slideLen - 1){
+      $slideFirst.classList.add('active', 'leftin');
+      $slideLast.classList.remove('active', 'leftin', 'rightin');
+    } else {
+      $active.classList.remove('active', 'leftin', 'rightin')
+      $active.nextElementSibling.classList.add('active', 'leftin');
+    }
+  }
+  // クリックイベント、セレクタ#next。
+  document.getElementById('next').addEventListener("touchstart", function() {
+    setList();
+    sliderNext();
+  });
+  document.getElementById('next').addEventListener("click", function() {
+    setList();
+    sliderNext();
+  });
+  // クリックイベント、セレクタ#prev。
+  document.getElementById('prev').addEventListener("touchstart", function() {
+    setList();
+    sliderPrev();
+  });
+  document.getElementById('prev').addEventListener("click", function() {
+    setList();
+    sliderPrev();
+  });
   // slider自動実行
   setInterval(function(){ 
-    document.getElementById('next').click();
+    setList();
+    sliderNext();
   },10000);
   // スワイプイベント 
   swipeItem.addEventListener("touchstart", function(e) {
