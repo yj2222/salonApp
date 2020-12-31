@@ -428,6 +428,7 @@ article h4{
   font-size: 22px;
 }
 article p{
+  color: black;
   font-size: 16px;
   padding: 5px 10px 10px;
   line-height: 1.5;
