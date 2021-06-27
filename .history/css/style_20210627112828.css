@@ -136,25 +136,10 @@ header > .container{
 }
 .reservBtn a{
   display: block;
-  padding: 10px 15px 10px 0;
+  padding: 10px;
   width: 50px;
   background: brown;
   writing-mode: vertical-rl;
-  color: white;
-  letter-spacing: .1em;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 10% 0 0 50%;
-  transition: .3s;
-}
-.reservBtn a:hover{
-  color: darkgreen;
-  background: #acb83b;
-}
-.reservBtn a i{
-  padding-top: .3em;
-  position: relative;
-  right: -2px;
 }
 /* slider */
 .bx-wrapper{

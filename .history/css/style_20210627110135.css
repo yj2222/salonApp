@@ -127,35 +127,6 @@ header > .container{
     font-size: 11px;
   }
 } */
-/* reservBtn */
-.reservBtn{
-  position: fixed;
-  right: 0;
-  top: 10px;
-  z-index: 10000;
-}
-.reservBtn a{
-  display: block;
-  padding: 10px 15px 10px 0;
-  width: 50px;
-  background: brown;
-  writing-mode: vertical-rl;
-  color: white;
-  letter-spacing: .1em;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 10% 0 0 50%;
-  transition: .3s;
-}
-.reservBtn a:hover{
-  color: darkgreen;
-  background: #acb83b;
-}
-.reservBtn a i{
-  padding-top: .3em;
-  position: relative;
-  right: -2px;
-}
 /* slider */
 .bx-wrapper{
   border: none;
@@ -217,8 +188,7 @@ p.message{
 }
 .reserv__mail p i{
   margin: 0 10px;
-  width: 50px;
-  line-height: 50px;
+  padding: 10px;
   color: white;
   font-size: 35px;
   background: darkgreen;
@@ -463,29 +433,16 @@ section.sns{
   margin-bottom: 100px;
 }
 section.sns a{
-  width: 50px;
-  height: 50px;
   display: inline-block;
   background: white;
-  margin-bottom: 20px;
-  border-radius: 50%;
-  text-align: center;
-}
-section.sns a:hover{
-  background: #acb83b;
-  transition: .3s;
 }
 section.sns i{
-  line-height: 50px;
-  color: darkgreen;
-  /* background: linear-gradient(to bottom, #5c1ac7 15%, #e12814 40%, #fcc37d);
+  color: #fcc37d;
+  background: linear-gradient(to bottom, #5c1ac7 15%, #e12814 40%, #fcc37d);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent;
   font-size: 40px;
-  transition: .3s;
-}
-section.sns a:hover i{
-  color: white;
+  margin-bottom: 20px;
 }
 section.sns p{
   line-height: 1.5;
@@ -493,12 +450,8 @@ section.sns p{
 section.access p{
   margin-bottom: 20px;
 }
-.access__address{
-  line-height: 1.5;
-}
 footer > p{
   padding: 30px 0;
   background: darkgreen;
   color: white;
-  border-top: 1px solid #acb83b;
 }

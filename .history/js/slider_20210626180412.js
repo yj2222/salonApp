@@ -3,7 +3,7 @@ $(function(){
     auto: true,
     pager: true,
     mode: 'fade',
-    speed: 2000,
-    pause: 10000
+    speed: 1500,
+    pause: 5000
   });
 });

@@ -127,35 +127,6 @@ header > .container{
     font-size: 11px;
   }
 } */
-/* reservBtn */
-.reservBtn{
-  position: fixed;
-  right: 0;
-  top: 10px;
-  z-index: 10000;
-}
-.reservBtn a{
-  display: block;
-  padding: 10px 15px 10px 0;
-  width: 50px;
-  background: brown;
-  writing-mode: vertical-rl;
-  color: white;
-  letter-spacing: .1em;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 10% 0 0 50%;
-  transition: .3s;
-}
-.reservBtn a:hover{
-  color: darkgreen;
-  background: #acb83b;
-}
-.reservBtn a i{
-  padding-top: .3em;
-  position: relative;
-  right: -2px;
-}
 /* slider */
 .bx-wrapper{
   border: none;
@@ -204,9 +175,6 @@ p.message{
 .reserv__mail{
   width: 300px;
   margin: 0 auto;
-  padding: 20px 0;
-  background: var(--bg-color);
-  border: 1px dashed darkgreen;
 }
 .mb20{
   margin-bottom: 20px;
@@ -215,19 +183,8 @@ p.message{
   line-height: 1.5;
   letter-spacing: .1em;
 }
-.reserv__mail p i{
-  margin: 0 10px;
-  width: 50px;
-  line-height: 50px;
-  color: white;
-  font-size: 35px;
-  background: darkgreen;
-  border-radius: 50%;
-  transition: .3s;
-}
-.reserv__mail p i:hover{
-  background: #acb83b;
-  color: darkgreen;
+.reserv__mail__txt p i{
+  color: inherit;
 }
 /* main contents */
 main.container{
@@ -419,7 +376,7 @@ section.price{
   margin-bottom: 100px;  
 }
 section.price ul{
-  background: url(../image/salon_img_3.jpg) center/cover no-repeat;
+  background: url(../image/salon7.jpg) center/cover no-repeat;
   padding: 10px;
 }
 section.price li{
@@ -445,8 +402,8 @@ section.price li:last-child{
 }
 /* footer */
 footer{
-  background: darkgreen;
-  color: white;
+  background: lightgray;
+  color: black;
   text-align: center;
   font-weight: bold;
 }
@@ -455,37 +412,18 @@ footer > .container{
 }
 footer h2{
   font-size: 30px;
-  color: white;
-  border-bottom: 1px solid #acb83b;
+  border-bottom: 1px solid darkgreen;
 }
-
+footer i{
+  color: #fcc37d;
+  background: linear-gradient(to bottom, #5c1ac7 15%, #e12814 40%, #fcc37d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
 section.sns{
   margin-bottom: 100px;
-}
-section.sns a{
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  background: white;
-  margin-bottom: 20px;
-  border-radius: 50%;
-  text-align: center;
-}
-section.sns a:hover{
-  background: #acb83b;
-  transition: .3s;
-}
-section.sns i{
-  line-height: 50px;
-  color: darkgreen;
-  /* background: linear-gradient(to bottom, #5c1ac7 15%, #e12814 40%, #fcc37d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  font-size: 40px;
-  transition: .3s;
-}
-section.sns a:hover i{
-  color: white;
 }
 section.sns p{
   line-height: 1.5;
@@ -493,12 +431,8 @@ section.sns p{
 section.access p{
   margin-bottom: 20px;
 }
-.access__address{
-  line-height: 1.5;
-}
 footer > p{
   padding: 30px 0;
   background: darkgreen;
   color: white;
-  border-top: 1px solid #acb83b;
 }

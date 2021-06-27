@@ -4,6 +4,6 @@ $(function(){
     pager: true,
     mode: 'fade',
     speed: 2000,
-    pause: 10000
+    pause: 7000
   });
 });
