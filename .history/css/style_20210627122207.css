@@ -219,10 +219,6 @@ p.message{
 .mb20{
   margin-bottom: 20px;
 }
-.reserv__mail p:first-of-type{
-  font-size: 30px;
-  color: darkgreen;
-}
 .reserv__mail__txt{
   line-height: 1.5;
   /* letter-spacing: .1em; */

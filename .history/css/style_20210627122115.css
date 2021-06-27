@@ -219,10 +219,6 @@ p.message{
 .mb20{
   margin-bottom: 20px;
 }
-.reserv__mail p:first-of-type{
-  font-size: 30px;
-  color: darkgreen;
-}
 .reserv__mail__txt{
   line-height: 1.5;
   /* letter-spacing: .1em; */
@@ -249,11 +245,6 @@ p.message{
   letter-spacing: .1em;
   font-size: 22px;
   border-radius: 8px;
-  transition: .3s;
-}
-.reserv__mail__btn:hover{
-  background: #acb83b;
-  color: darkgreen;
 }
 .reserv__mail__btn i{
   padding-left: .3em;

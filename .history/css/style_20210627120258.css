@@ -134,14 +134,9 @@ header > .container{
   top: 10px;
   z-index: 10000;
 }
-/* @media screen and (min-width: 768px){
-  .reservBtn{
-    position: fixed;
-    right: 0;
-    top: 10px;
-    z-index: 10000;
-  }
-} */
+@media screen {
+  
+}
 .reservBtn a{
   display: block;
   padding: 10px 15px 10px 0;
@@ -219,13 +214,9 @@ p.message{
 .mb20{
   margin-bottom: 20px;
 }
-.reserv__mail p:first-of-type{
-  font-size: 30px;
-  color: darkgreen;
-}
 .reserv__mail__txt{
   line-height: 1.5;
-  /* letter-spacing: .1em; */
+  letter-spacing: .1em;
 }
 .reserv__mail p i{
   margin: 0 10px;
@@ -240,23 +231,6 @@ p.message{
 .reserv__mail p i:hover{
   background: #acb83b;
   color: darkgreen;
-}
-.reserv__mail__btn{
-  display: inline-block;
-  padding: 20px 30px;
-  background: brown;
-  color: white;
-  letter-spacing: .1em;
-  font-size: 22px;
-  border-radius: 8px;
-  transition: .3s;
-}
-.reserv__mail__btn:hover{
-  background: #acb83b;
-  color: darkgreen;
-}
-.reserv__mail__btn i{
-  padding-left: .3em;
 }
 /* main contents */
 main.container{
