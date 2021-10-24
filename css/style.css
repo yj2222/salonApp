@@ -169,6 +169,10 @@ header > .container{
   border: none;
   box-shadow: none;
 }
+.bx-wrapper img {
+  width: 100%;
+  /* object-fit: cover; */
+}
 /* main top */
 h2,h3{
   color: darkgreen;
